@@ -53,6 +53,8 @@ public class HelloServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+		request.getRequestDispatcher("hello.jsp").forward(request, response);
 	}
 
 }

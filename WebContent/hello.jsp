@@ -7,12 +7,13 @@
 	<title>Hello Page</title>
 </head>
 <body>
-	<p> Hello <%= request.getParameter("name") %></p>
+	<p> Hello <%= request.getParameter("name") %></p> <!-- get -->
 	
-	<form action="">
-		<p> First Name : <input type="text" name="firstname"> </p>
-		<p> Last Name : <input type="text" name="lastname"> </p>
+	<form method="POST">
+		<p> Name : <input type="text" name="firstname"> </p>
 		<input type="submit" value="Soumettre">
 	</form>
+	<%= request.getParameter("firstname") %>
+	
 </body>
 </html>
